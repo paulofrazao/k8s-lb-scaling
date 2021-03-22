@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: rancher-demo
+  name: colour-app
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app.kubernetes.io/name: rancher-demo
+      app.kubernetes.io/name: suse-demo
   template:
     spec:
       containers:
-      - image: monachus/rancher-demo:latest
-        name: rancher-demo
+      - image: paulofrazao/suse-demo-yellow:0.1.0
+        name: suse-demo
         envFrom:
         - configMapRef:
-            name: rancher-demo-config
+            name: suse-demo-config
