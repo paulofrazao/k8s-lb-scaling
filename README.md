@@ -6,6 +6,18 @@ Only change to this fork from rancherchris/rancher-demo is the replacement of Ra
 
 This is a Go demo application used for demonstrating Kubernetes and load balancing.
 
+For Docker-Compose
+
+Build
+docker-compose build
+
+Run
+docker-compose up
+
+Cleanup
+docker-compose down -v --rmi local
+
+
 It will create a colored icon for each replica within a ReplicaSet and indicate which one
 most recently served a response. Replicas which haven't been heard from will begin to fade
 out, until after a configurable number of seconds they will disappear. This is useful for
