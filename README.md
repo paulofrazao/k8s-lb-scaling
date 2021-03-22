@@ -1,5 +1,7 @@
 # Rancher/Kubernetes Demo Application
 
+Original Author: Evan Hazlett (https://github.com/ehazlett/docker-demo)
+
 Only change to this fork from rancherchris/rancher-demo is the replacement of Rancher logos with SUSE Logos.
 
 This is a Go demo application used for demonstrating Kubernetes and load balancing.
