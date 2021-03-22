@@ -8,13 +8,13 @@ This is a Go demo application used for demonstrating Kubernetes and load balanci
 
 For Docker-Compose
 
-Build
+Build - 
 docker-compose build
 
-Run
+Run - 
 docker-compose up
 
-Cleanup
+Cleanup - 
 docker-compose down -v --rmi local
 
 
