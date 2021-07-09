@@ -23,7 +23,7 @@ ENV COW_COLOR yellow
 RUN go build -mod=vendor -a -v -tags 'netgo' -ldflags '-w -extldflags -static' -o docker-demo .
 
 # Expose the port for the application
-EXPOSE 8080
+EXPOSE 80
 
 # Set the entrypoint for the application
 ENTRYPOINT ["/go/src/app/docker-demo"]
