@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: source-vars
 data:
-  MY_NAMESPACE: suse-demo
-  URL_HOST: colour.suse.studio
+  MY_NAMESPACE: k8s-lb-demo
+  URL_HOST: colour.weaveworks.cloud
