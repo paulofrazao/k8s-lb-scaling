@@ -1,8 +1,10 @@
-version: "3"
+version: "3.5"
 
 services:
   app:
-    build: .
+    build:
+      context: .  
+      dockerfile: Dockerfile.red
     environment:
       - "TITLE=K8s Load Balancing & Scaling"
     ports:

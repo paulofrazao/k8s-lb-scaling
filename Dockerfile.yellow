@@ -1,7 +1,7 @@
 FROM golang:1.11.10-alpine3.9 as app
 
 # Set some maintainer info
-MAINTAINER Paulo Frazao <paulo.frazao@suse.com>
+MAINTAINER Paulo Frazao <pfrazao@gmail.com>
 
 # Install prerequisites into the image
 RUN apk add -U build-base git
