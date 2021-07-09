@@ -4,7 +4,7 @@ services:
   app:
     build:
       context: .  
-      dockerfile: Dockerfile.red
+      dockerfile: Dockerfile.yellow
     environment:
       - "TITLE=K8s Load Balancing & Scaling"
     ports:
