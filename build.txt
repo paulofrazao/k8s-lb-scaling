@@ -23,6 +23,8 @@ docker image tag k8s-lb-scaling paulofrazao/k8s-lb-scaling:yellow
 docker images
 docker image push paulofrazao/k8s-lb-scaling:yellow
 
+
+
 #build new image for red
 docker image build -f Dockerfile.red -t k8s-lb-scaling .
 #verify new images works

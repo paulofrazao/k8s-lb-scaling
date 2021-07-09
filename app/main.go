@@ -279,7 +279,7 @@ func main() {
 		cli.StringFlag{
 			Name:  "listen-addr, l",
 			Usage: "listen address",
-			Value: ":8080",
+			Value: ":80",
 		},
 		cli.StringFlag{
 			Name:  "tls-cert, c",
