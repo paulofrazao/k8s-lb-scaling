@@ -16,7 +16,7 @@ spec:
     matchLabels:
       app.kubernetes.io/name: colour
       app.kubernetes.io/component: frontend
-  replicas: 5
+  replicas: 1
   template:
     metadata:
       labels:
