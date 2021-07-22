@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
       - name: colour
-        image: paulofrazao/k8s-lb-scaling:red
+        image: paulofrazao/k8s-lb-scaling:yellow
         resources:
           requests:
             cpu: 100m
