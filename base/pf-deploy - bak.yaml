@@ -63,13 +63,8 @@ metadata:
   name: colour
   namespace: apps
   annotations:
-    cert-manager.io/cluster-issuer: letsencrypt-prod
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
-  tls:
-  - hosts:
-    - colour.geshi.ca
-    secretName: colour-geshi-ca-crt
   rules:
   - host: colour.geshi.ca
     http:
