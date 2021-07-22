@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .  
+      dockerfile: Dockerfile.yellow
+    environment:
+      - "TITLE=K8s Load Balancing & Scaling"
+    ports:
+      - "80:80"
+
+
+
+

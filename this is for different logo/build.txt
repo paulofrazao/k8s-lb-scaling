@@ -1,0 +1,28 @@
+# This directory is for a simple logo change when changing colours. Instead of using the same K8s logo,
+# this will chabge colour and logo at the same time
+
+
+docker-compose down -v --rmi local
+
+###To delete all containers including its volumes use,
+docker rm -vf $(docker ps -a -q)
+
+###To delete all the images,
+docker rmi -f $(docker images -a -q)
+###Remember, you should remove all the containers before removing all the images from which those containers were created.
+
+##Setup Dockerfile and show testing of app prior to building image
+cd c:\....
+docker compose up
+browse localhost
+docker-compose down -v --rmi local
+
+#build new image for red
+docker image build -f Dockerfile.red -t k8s-lb-scaling .
+#verify new images works
+docker container run -p 8080:8080 -d k8s-lb-scaling
+
+##upload to Docker HUb
+docker image tag k8s-lb-scaling paulofrazao/k8s-lb-scaling:red
+docker images
+docker image push paulofrazao/k8s-lb-scaling:red
