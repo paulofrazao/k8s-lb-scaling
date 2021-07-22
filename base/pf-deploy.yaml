@@ -16,7 +16,7 @@ spec:
     matchLabels:
       app.kubernetes.io/name: colour
       app.kubernetes.io/component: frontend
-  replicas: 1
+  replicas: 3
   template:
     metadata:
       labels:
@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
       - name: colour
-        image: paulofrazao/k8s-lb-scaling:yellow
+        image: paulofrazao/k8s-lb-scaling:red
         resources:
           requests:
             cpu: 100m
